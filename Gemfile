@@ -30,6 +30,7 @@ gem 'guard'
 gem 'guard-test'
 
 gem "angular-rails"
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
