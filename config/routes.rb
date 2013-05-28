@@ -1,4 +1,6 @@
 NgPhotogur::Application.routes.draw do
+  root :to => "static#root"
+
   namespace :api do
     namespace :v1 do
       resources :pictures
