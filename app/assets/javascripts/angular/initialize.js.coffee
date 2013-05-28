@@ -23,7 +23,6 @@
   .otherwise(template: "Page not found.")
 
 
-
 @photogur.run ['$window', '$templateCache', ($window, $templateCache) ->
   # Load the hamlc templates into the angular template cache when angular 
   # starts up. This means angular doesn't need to download each template from 
@@ -31,3 +30,25 @@
   for name, templateFunction of $window.JST
     $templateCache.put(name, templateFunction)
 ]
+
+
+# Store the picture data in a factory so that the data can be injected into
+# many controllers
+@photogur.factory 'Pictures', ->
+  [
+    {
+      title : "The old church on the coast of White sea"
+      artist: "Sergey Ershov"
+      url   : "http://monicao.s3.amazonaws.com/bitmaker/house.jpg"
+    }
+    {
+      title : "Sea Power"
+      artist: "Stephen Scullion"
+      url   : "http://monicao.s3.amazonaws.com/bitmaker/wave.jpg"
+    }
+    {
+      title : "Into the Poppies"
+      artist: "John Wilhelm"
+      url   : "http://monicao.s3.amazonaws.com/bitmaker/girl.jpg"
+    }
+  ]
