@@ -1,3 +1,3 @@
-Rebuilding Photogur app but now with Angular. 
+###Rebuilding Photogur app but now with Angular. 
 
-Bitmaker Labs. Summer Cohort. 2013.
+#####Bitmaker Labs. Summer Cohort. 2013.
